@@ -4,3 +4,212 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+header{
+    font-family: FlameSans-Regular;
+    font-size: 16px;
+}
+.logo{
+    width: 48px;
+   height: 48px;
+}
+
+.navbar{
+    background-color: #f5ebdc;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+
+
+header a:hover{
+   background-color: #d72300;
+   border-radius: 20px;
+   display: inline-block;
+}
+
+.nav-item{
+    box-sizing: border-box;
+    transition: 0.1 !important;
+}
+
+.nav-link{
+    margin-left: 0.5em!important;
+    margin-right: 0.5em!important;
+    color:#502314!important;
+    padding-left: 0.5em!important;
+    padding-right: 0.5em!important;
+    transition: 0s!important;
+}
+
+#navbarSupportedContent{
+    height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    header a:hover{
+        background-color: #ecdfd0;
+     }
+     .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+            }
+            .navbar-expand-lg .navbar-toggler {
+                display: none;
+            }
+            .navbar-expand-lg {
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+            }
+            .navbar-expand-lg .navbar-nav {
+                flex-direction: row;
+            }
+            #navbarSupportedContent{
+                height: 7vh;
+            }
+    
+}
+/* Ezequiel Acebal*/
+.card-group{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:2rem;
+}
+
+.card{
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+}
+
+.card-img-top{
+    width: 18rem;
+}
+
+/*Facundo Balderrama*/
+#delivery {
+    background-color:red;
+}
+
+.card-title {
+    color:maroon;
+}
+
+.white-text {
+    color: white;
+}
+
+.btn-dark {
+    background-image: url("https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/wordpress/web/app/uploads/sites/5/google_play.png");
+}
+
+#appimg {
+    display: inline;
+    width: 500px;
+    height: 500px;
+}
+
+#gplay {
+    background-image: url("https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/wordpress/web/app/uploads/sites/5/google_play.png");
+    background-repeat:no-repeat;
+    height:50px;
+    width:150px;
+    background-position:center;
+    background-size: cover;
+}
+
+#appstore {
+    background-image: url("https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/wordpress/web/app/uploads/sites/5/app__store.png");
+    background-repeat:no-repeat;
+    height:50px;
+    width:150px;
+    background-position:center;
+    background-size: cover;
+}
+
+#rappibut {
+    background-image: url("https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/wordpress/web/app/uploads/sites/5/2021/03/rappi-1.svg");
+    background-repeat:no-repeat;
+    height:50px;
+    width:125px;
+    background-position:center;
+    color: white;
+    
+}
+
+#pediyabut {
+    background-image: url("https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/wordpress/web/app/uploads/sites/5/2021/04/Pedidos-ya-05.png");
+    background-repeat:no-repeat;
+    height:50px;
+    width:125px;
+    background-position:center;
+    color: white;
+    
+}
+
+#descrip {
+    display: inline;
+    width: 500px;
+}
+
+#bigimg {
+    display: inline;
+    width: 500px;
+}
+
+#pedido {
+    width: 250px;
+    height: 50px;
+    background-color: red;
+}
+
+#descarga {
+    display: inline;
+    width: 500px;
+}
+
+
+/*Dario Rosiansky*/
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+  }
+  
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+  
+.card-img-top {
+    width: 100%;
+    height: 200px !important; 
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+
+  .carousel-indicators li{
+    width:10px; 
+    height:10px;  
+    border-radius: 50%;}
+    
+    #footer{
+        background-color: rgb(80, 35, 20)!important;
+        color: aliceblue!important;
+    }
+
+    .white{
+        color: aliceblue!important;
+        padding: 2rem;
+    }

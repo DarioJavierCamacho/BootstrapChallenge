@@ -53,6 +53,13 @@ header a:hover{
     height: 100vh;
 }
 
+@media screen and (min-width: 0 ){
+    #segunda,#tercera{
+        display: none;
+    }
+    
+}
+
 @media screen and (min-width: 768px) {
     header a:hover{
         background-color: #ecdfd0;
@@ -73,26 +80,79 @@ header a:hover{
             }
             #navbarSupportedContent{
                 height: 7vh;
+                width: 100%;
             }
-    
-}
-/* Ezequiel Acebal*/
-.card-group{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    gap:2rem;
+    #segunda{
+        display: block;
+    }
 }
 
-.card{
+    @media screen and (min-width: 992px){
+        #tercera{
+            display: block;
+        }
+        
+    }   
+    @media screen and (min-width: 1440px){
+        .nav-container{
+            display: flex;
+            flex-direction: row;
+            background-color: #f5ebdc;
+            justify-content: center;
+        }
+        .carousel-img{
+            height: 65vh!important;
+            object-fit: cover;
+        }
+}
+/* Ezequiel Acebal*/
+.bk-novedades{
+    background-color: #f5ebdc;
+    font-size: 16px;
+    
+}
+
+.bk-novedades h2{
+    padding-left: 2rem;
+}
+
+.card-body{
+    color:#502314!important;
+    font-weight: 3px;
+}
+.card-group{
     display: flex;
-    width: 18rem;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tarjeta{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    border: none;
+    background-color: #f5ebdc;
+
 }
 
 .card-img-top{
-    width: 18rem;
+    width:  100%;
+    border-radius: 14px;
+}
+
+.card-title{
+    font-family: FlameSans-Regular;
+    font-size: 28px!important;
+    letter-spacing: -0.68px!important;
+    font-weight: 700;
+    margin-bottom: 8px!important;
+}
+
+
+#primera,#segunda,#tercera{
+    box-sizing: border-box;
+    border-radius: 20px!important;
 }
 
 /*Facundo Balderrama*/
@@ -181,24 +241,10 @@ header a:hover{
 /*Dario Rosiansky*/
 
 .carousel-item {
-    height: 65vh;
-    min-height: 300px;
     background: no-repeat center center scroll;
     background-size: cover;
   }
   
-  .card-columns .card {
-    display: inline-block;
-    width: 100%;
-  }
-  
-.card-img-top {
-    width: 100%;
-    height: 200px !important; 
-    border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px);
-  }
-
   .carousel-indicators li{
     width:10px; 
     height:10px;  
@@ -207,9 +253,15 @@ header a:hover{
     #footer{
         background-color: rgb(80, 35, 20)!important;
         color: aliceblue!important;
+        margin: 0!important;
+        border:none!important;
     }
 
     .white{
         color: aliceblue!important;
         padding: 2rem;
     }
+
+.carousel-img{
+    height: 460px;
+}
